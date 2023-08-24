@@ -35,7 +35,9 @@ F --> (E) | a
 Enter a string to be parsed: 
 ```
 a*a+(a+a)
-
+```
+Output
+```
 Action: E --> TE^
 Action: T --> FT^
 Action: F --> a Matching: 'a'
