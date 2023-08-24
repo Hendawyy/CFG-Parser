@@ -2,13 +2,11 @@
 This repository contains a simple parser for a context-free grammar (CFG). The CFG is defined as follows:
 
 ```c
-/*
 E --> TE^
 T --> FT^
 E^ --> +TE^ | NULL
 T^ --> *FT^ | NULL
 F --> (E) | a
-*/
 ```
 
 ## How to Use
@@ -37,7 +35,7 @@ F --> (E) | a
 Enter a string to be parsed: 
 ```
 a*a+(a+a)
-```
+
 Action: E --> TE^
 Action: T --> FT^
 Action: F --> a Matching: 'a'
@@ -54,3 +52,4 @@ Action: T^ --> NULL
 Matching: ')'
 Action: E^ --> NULL
 String is accepted
+```
